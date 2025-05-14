@@ -1,0 +1,144 @@
+CREATE TABLE LOCALIDAD (
+    id_localidad INT PRIMARY KEY,
+    localidad VARCHAR(30)
+);
+
+CREATE TABLE GENERO (
+    id_genero INT PRIMARY KEY,
+    genero VARCHAR(20)
+);
+
+CREATE TABLE TIPO_DOCUMENTO (
+    id_tipodoc INT PRIMARY KEY,
+    tipodoc VARCHAR(20)
+);
+
+CREATE TABLE PERSONA (
+    id_persona INT PRIMARY KEY,
+    legajo INT,
+    apellido VARCHAR(30),
+    nombre VARCHAR(30),
+    id_tipodoc INT,
+    nro_doc INT,
+    id_localidad INT,
+    id_genero INT,
+    correo VARCHAR(120),
+    cuil VARCHAR(11),
+    FOREIGN KEY (id_tipodoc) REFERENCES TIPO_DOCUMENTO(id_tipodoc),
+    FOREIGN KEY (id_localidad) REFERENCES LOCALIDAD(id_localidad),
+    FOREIGN KEY (id_genero) REFERENCES GENERO(id_genero)
+);
+
+CREATE TABLE TELEFONO (
+    id_telefono INT PRIMARY KEY,
+    id_persona INT,
+    observaciones VARCHAR(30),
+    nro_telefono VARCHAR(10),
+    FOREIGN KEY (id_persona) REFERENCES PERSONA(id_persona)
+);
+
+CREATE TABLE LOCALIDAD_USUARIO (
+    id_localidad_usuario INT PRIMARY KEY,
+    nombre_localidad VARCHAR(30),
+    codigo_postal VARCHAR(5),
+    id_provincia INT,
+    calle VARCHAR(20),
+    numero INT,
+    departamento INT
+);
+
+CREATE TABLE ACCESO (
+    id_acceso INT PRIMARY KEY,
+    ip VARCHAR(20)
+);
+
+CREATE TABLE ROL (
+    id_rol INT PRIMARY KEY,
+    rol VARCHAR(20)
+);
+
+CREATE TABLE HISTORIALPASSWORD (
+    id_historialpass INT PRIMARY KEY,
+    password VARCHAR(30),
+    ultima_actualizacion DATETIME,
+    observaciones VARCHAR(30)
+);
+
+CREATE TABLE USUARIOS (
+    id_user INT PRIMARY KEY,
+    [user] VARCHAR(30),
+    [password] VARCHAR(30),
+    id_persona INT,
+    activo INT,
+    id_historialpass INT,
+    id_rol INT,
+    id_acceso INT,
+    FOREIGN KEY (id_persona) REFERENCES PERSONA(id_persona),
+    FOREIGN KEY (id_historialpass) REFERENCES HISTORIALPASSWORD(id_historialpass),
+    FOREIGN KEY (id_rol) REFERENCES ROL(id_rol),
+    FOREIGN KEY (id_acceso) REFERENCES ACCESO(id_acceso)
+);
+
+CREATE TABLE PREGUNTAS (
+    id_pregunta INT PRIMARY KEY,
+    pregunta VARCHAR(32)
+);
+
+CREATE TABLE RESPUESTAS (
+    id_pregunta INT,
+    id_user INT,
+    respuesta VARCHAR(30),
+    PRIMARY KEY (id_pregunta, id_user),
+    FOREIGN KEY (id_pregunta) REFERENCES PREGUNTAS(id_pregunta),
+    FOREIGN KEY (id_user) REFERENCES USUARIOS(id_user)
+);
+
+CREATE TABLE PERMISOS (
+    id_permiso INT PRIMARY KEY,
+    permiso VARCHAR(32),
+    descripcion VARCHAR(30)
+);
+
+CREATE TABLE PERMISOS_USUARIOS (
+    id_permiso INT,
+    id_user INT,
+    fecha_vc DATE,
+    PRIMARY KEY (id_permiso, id_user),
+    FOREIGN KEY (id_permiso) REFERENCES PERMISOS(id_permiso),
+    FOREIGN KEY (id_user) REFERENCES USUARIOS(id_user)
+);
+
+CREATE TABLE FAMILIA_RESTRICCIONES (
+    id_familia INT PRIMARY KEY,
+    nombre_familia VARCHAR(30),
+    descripcion VARCHAR(30)
+);
+
+CREATE TABLE TIPO_RESTRICCIONES (
+    id_tiporestriccion INT PRIMARY KEY,
+    tipo VARCHAR(30)
+);
+
+CREATE TABLE RESTRICCIONES (
+    id_restriccion INT PRIMARY KEY,
+    cod_restriccion INT,
+    id_tiporest INT,
+    estado BIT,
+    id_familia INT,
+    FOREIGN KEY (id_tiporest) REFERENCES TIPO_RESTRICCIONES(id_tiporestriccion),
+    FOREIGN KEY (id_familia) REFERENCES FAMILIA_RESTRICCIONES(id_familia)
+);
+
+CREATE TABLE CONFIGURACION (
+    id_configuracion INT PRIMARY KEY,
+    min_caracteres INT,
+    preguntas_reqbo VARCHAR(80),
+    usar_mayus BIT,
+    usar_minus BIT,
+    usar_numeros BIT,
+    usar_caracteres BIT,
+    autenticacion_especial BIT,
+    doble_factor BIT,
+    id_restriccion INT,
+    FOREIGN KEY (id_restriccion) REFERENCES RESTRICCIONES(id_restriccion)
+);
