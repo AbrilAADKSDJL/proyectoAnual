@@ -1,0 +1,238 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\danie\\Downloads\\login ferrando\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|c:\\users\\danie\\downloads\\login ferrando\\login ferrando\\vista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|solutionrelative:login ferrando\\vista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|c:\\users\\danie\\downloads\\login ferrando\\login ferrando\\vista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|solutionrelative:login ferrando\\vista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|c:\\users\\danie\\downloads\\login ferrando\\login ferrando\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|solutionrelative:login ferrando\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6044F26C-4AF8-4374-B8B8-D5650D87C8D3}|logica\\logica.csproj|c:\\users\\danie\\downloads\\login ferrando\\logica\\obtenerid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6044F26C-4AF8-4374-B8B8-D5650D87C8D3}|logica\\logica.csproj|solutionrelative:logica\\obtenerid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6044F26C-4AF8-4374-B8B8-D5650D87C8D3}|logica\\logica.csproj|c:\\users\\danie\\downloads\\login ferrando\\logica\\logicaverificarcontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6044F26C-4AF8-4374-B8B8-D5650D87C8D3}|logica\\logica.csproj|solutionrelative:logica\\logicaverificarcontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\administradorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|solutionrelative:login ferrando\\administradorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\formagregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|solutionrelative:login ferrando\\formagregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|c:\\users\\danie\\downloads\\login ferrando\\login ferrando\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|solutionrelative:login ferrando\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6044F26C-4AF8-4374-B8B8-D5650D87C8D3}|logica\\logica.csproj|c:\\users\\danie\\downloads\\login ferrando\\logica\\logicabuscarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6044F26C-4AF8-4374-B8B8-D5650D87C8D3}|logica\\logica.csproj|solutionrelative:logica\\logicabuscarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6F99A4D-C37F-4E84-91B7-DC61E8653545}|datos\\datos.csproj|c:\\users\\danie\\downloads\\login ferrando\\datos\\crearusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F99A4D-C37F-4E84-91B7-DC61E8653545}|datos\\datos.csproj|solutionrelative:datos\\crearusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6F99A4D-C37F-4E84-91B7-DC61E8653545}|datos\\datos.csproj|c:\\users\\danie\\downloads\\login ferrando\\datos\\datosusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F99A4D-C37F-4E84-91B7-DC61E8653545}|datos\\datos.csproj|solutionrelative:datos\\datosusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|c:\\users\\danie\\downloads\\login ferrando\\login ferrando\\administradorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|solutionrelative:login ferrando\\administradorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|c:\\users\\danie\\downloads\\login ferrando\\login ferrando\\formagregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0561E77D-C08E-45F1-9D7D-73983A1E1808}|login ferrando\\vista usuario.csproj|solutionrelative:login ferrando\\formagregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "vista.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\vista.cs",
+              "RelativeDocumentMoniker": "login ferrando\\vista.cs",
+              "ToolTip": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\vista.cs",
+              "RelativeToolTip": "login ferrando\\vista.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T00:40:20.439Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\Program.cs",
+              "RelativeDocumentMoniker": "login ferrando\\Program.cs",
+              "ToolTip": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\Program.cs",
+              "RelativeToolTip": "login ferrando\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T01:13:33.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormAgregarUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\FormAgregarUsuario.cs",
+              "RelativeDocumentMoniker": "login ferrando\\FormAgregarUsuario.cs",
+              "ToolTip": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\FormAgregarUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "login ferrando\\FormAgregarUsuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T04:59:13.378Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ObtenerId.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Downloads\\login ferrando\\logica\\ObtenerId.cs",
+              "RelativeDocumentMoniker": "logica\\ObtenerId.cs",
+              "ToolTip": "C:\\Users\\danie\\Downloads\\login ferrando\\logica\\ObtenerId.cs",
+              "RelativeToolTip": "logica\\ObtenerId.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T00:59:39.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "vista.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\vista.cs",
+              "RelativeDocumentMoniker": "login ferrando\\vista.cs",
+              "ToolTip": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\vista.cs [Dise\u00F1o]",
+              "RelativeToolTip": "login ferrando\\vista.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T00:40:17.999Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "logicaverificarcontrase\u00F1a.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Downloads\\login ferrando\\logica\\logicaverificarcontrase\u00F1a.cs",
+              "RelativeDocumentMoniker": "logica\\logicaverificarcontrase\u00F1a.cs",
+              "ToolTip": "C:\\Users\\danie\\Downloads\\login ferrando\\logica\\logicaverificarcontrase\u00F1a.cs",
+              "RelativeToolTip": "logica\\logicaverificarcontrase\u00F1a.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T01:11:44.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "error.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\error.cs",
+              "RelativeDocumentMoniker": "login ferrando\\error.cs",
+              "ToolTip": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\error.cs [Dise\u00F1o]",
+              "RelativeToolTip": "login ferrando\\error.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T01:11:39.853Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdministradorUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\AdministradorUsuarios.cs",
+              "RelativeDocumentMoniker": "login ferrando\\AdministradorUsuarios.cs",
+              "ToolTip": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\AdministradorUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "login ferrando\\AdministradorUsuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T15:42:30.629Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LogicaBuscarUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Downloads\\login ferrando\\logica\\LogicaBuscarUsuario.cs",
+              "RelativeDocumentMoniker": "logica\\LogicaBuscarUsuario.cs",
+              "ToolTip": "C:\\Users\\danie\\Downloads\\login ferrando\\logica\\LogicaBuscarUsuario.cs",
+              "RelativeToolTip": "logica\\LogicaBuscarUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T00:40:40.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CrearUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Downloads\\login ferrando\\datos\\CrearUsuario.cs",
+              "RelativeDocumentMoniker": "datos\\CrearUsuario.cs",
+              "ToolTip": "C:\\Users\\danie\\Downloads\\login ferrando\\datos\\CrearUsuario.cs",
+              "RelativeToolTip": "datos\\CrearUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T01:05:08.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DatosUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Downloads\\login ferrando\\datos\\DatosUsuarios.cs",
+              "RelativeDocumentMoniker": "datos\\DatosUsuarios.cs",
+              "ToolTip": "C:\\Users\\danie\\Downloads\\login ferrando\\datos\\DatosUsuarios.cs",
+              "RelativeToolTip": "datos\\DatosUsuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T01:05:10.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormAgregarUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\FormAgregarUsuario.cs",
+              "RelativeDocumentMoniker": "login ferrando\\FormAgregarUsuario.cs",
+              "ToolTip": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\FormAgregarUsuario.cs",
+              "RelativeToolTip": "login ferrando\\FormAgregarUsuario.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAADwvyoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T05:04:52.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdministradorUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\AdministradorUsuarios.cs",
+              "RelativeDocumentMoniker": "login ferrando\\AdministradorUsuarios.cs",
+              "ToolTip": "C:\\Users\\danie\\Downloads\\login ferrando\\login ferrando\\AdministradorUsuarios.cs",
+              "RelativeToolTip": "login ferrando\\AdministradorUsuarios.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAiwHEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T15:46:42.006Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
