@@ -15,7 +15,16 @@ namespace login_ferrando
         public AdministradorUsuarios()
         {
             InitializeComponent();
+
             this.StartPosition = FormStartPosition.CenterScreen;
+
+            dgvUsuarios.ReadOnly = true;
+            dgvUsuarios.RowHeadersVisible = false;
+            dgvUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvUsuarios.MultiSelect = false;
+            dgvUsuarios.AllowUserToAddRows = false;
+            dgvUsuarios.AutoGenerateColumns = true;
+
             ActualizarListaUsuarios();
         }
 
@@ -34,7 +43,7 @@ namespace login_ferrando
         }
 
         // Lista de usuarios simulada en memoria
-        private List<Usuario> usuarios = new List<Usuario>();
+        private BindingList<Usuario> usuarios = new BindingList<Usuario>();
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
@@ -55,61 +64,76 @@ namespace login_ferrando
                         Telefono = formAgregar.Telefono,
                         Rol = formAgregar.Rol
                     });
-                    ActualizarListaUsuarios();
                 }
             }
         }
 
         private void ActualizarListaUsuarios()
         {
-            dgvUsuarios.AutoGenerateColumns = false;
-            dgvUsuarios.DataSource = null;
-            dgvUsuarios.DataSource = usuarios;
-            dgvUsuarios.ClearSelection();
+            if (dgvUsuarios.DataSource == null)
+                dgvUsuarios.DataSource = usuarios;
         }
 
-        private void btnEditar_Click_1(object sender, EventArgs e)
+        private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Validar que haya al menos una fila seleccionada
-            if (dgvUsuarios.SelectedRows.Count == 0 || dgvUsuarios.CurrentRow == null)
+
+        }
+
+        private void dgvUsuarios_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnModificar_Click(sender, e);
+        }
+        private Usuario ObtenerUsuarioSeleccionado()
+        {
+            if (dgvUsuarios.CurrentRow == null)
+                return null;
+
+            var usuario = dgvUsuarios.CurrentRow.DataBoundItem as Usuario;
+            return usuario;
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            var usuario = ObtenerUsuarioSeleccionado();
+            if (usuario == null)
             {
-                MessageBox.Show("Debe seleccionar un usuario para editar.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("No hay ningún usuario seleccionado.");
                 return;
             }
 
-            var row = dgvUsuarios.SelectedRows[0];
-
-            // Validar que la fila no sea una nueva fila vacía
-            if (row.IsNewRow)
+            var confirm = MessageBox.Show($"¿Desea eliminar al usuario {usuario.Nombre_Usuario}?",
+                                          "Confirmar eliminación",
+                                          MessageBoxButtons.YesNo,
+                                          MessageBoxIcon.Question);
+            if (confirm == DialogResult.Yes)
             {
-                MessageBox.Show("No se puede editar una fila vacía.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                usuarios.Remove(usuario);
             }
 
-            var usuarioSeleccionado = row.DataBoundItem as Usuario;
+        }
 
-            if (usuarioSeleccionado == null)
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            var usuario = ObtenerUsuarioSeleccionado();
+            if (usuario == null)
             {
-                MessageBox.Show("No se pudo obtener el usuario seleccionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No hay ningún usuario seleccionado.");
                 return;
             }
 
             using (var formEditar = new FormAgregarUsuario())
             {
-                formEditar.CargarDatosUsuario(usuarioSeleccionado);
-
+                formEditar.CargarDatosUsuario(usuario);
                 if (formEditar.ShowDialog() == DialogResult.OK)
                 {
-                    usuarioSeleccionado.Nombre_Usuario = formEditar.Nombre_Usuario;
-                    usuarioSeleccionado.Contraseña = formEditar.Contraseña;
-                    usuarioSeleccionado.Nombre = formEditar.Nombre;
-                    usuarioSeleccionado.Localidad = formEditar.Localidad;
-                    usuarioSeleccionado.Genero = formEditar.Genero;
-                    usuarioSeleccionado.Tipo_Documento = formEditar.TipoDocumento;
-                    usuarioSeleccionado.Telefono = formEditar.Telefono;
-                    usuarioSeleccionado.Rol = formEditar.Rol;
-
-                    ActualizarListaUsuarios();
+                    usuario.Nombre_Usuario = formEditar.Nombre_Usuario;
+                    usuario.Contraseña = formEditar.Contraseña;
+                    usuario.Nombre = formEditar.Nombre;
+                    usuario.Localidad = formEditar.Localidad;
+                    usuario.Genero = formEditar.Genero;
+                    usuario.Tipo_Documento = formEditar.TipoDocumento;
+                    usuario.Telefono = formEditar.Telefono;
+                    usuario.Rol = formEditar.Rol;
                 }
             }
         }

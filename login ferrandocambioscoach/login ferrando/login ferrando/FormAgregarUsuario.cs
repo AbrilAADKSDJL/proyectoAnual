@@ -134,5 +134,10 @@ namespace login_ferrando
             txtTelefono.Text = usuario.Telefono;
             cmbRol.Text = usuario.Rol;
         }
+
+        private void FormAgregarUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

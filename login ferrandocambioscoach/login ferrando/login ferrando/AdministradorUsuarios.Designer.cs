@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             btnAgregar = new Button();
-            btnEditar = new Button();
-            btnEliminar = new Button();
             dgvUsuarios = new DataGridView();
             ID = new DataGridViewTextBoxColumn();
             NombreUsuario = new DataGridViewTextBoxColumn();
@@ -41,6 +39,8 @@
             TipoDocumento = new DataGridViewTextBoxColumn();
             Telefono = new DataGridViewTextBoxColumn();
             Rol = new DataGridViewTextBoxColumn();
+            btnEliminar = new Button();
+            btnModificar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvUsuarios).BeginInit();
             SuspendLayout();
             // 
@@ -54,25 +54,6 @@
             btnAgregar.UseVisualStyleBackColor = true;
             btnAgregar.Click += btnAgregar_Click;
             // 
-            // btnEditar
-            // 
-            btnEditar.Location = new Point(48, 118);
-            btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(75, 23);
-            btnEditar.TabIndex = 1;
-            btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = true;
-            btnEditar.Click += btnEditar_Click_1;
-            // 
-            // btnEliminar
-            // 
-            btnEliminar.Location = new Point(48, 157);
-            btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(75, 23);
-            btnEliminar.TabIndex = 2;
-            btnEliminar.Text = "Eliminar";
-            btnEliminar.UseVisualStyleBackColor = true;
-            // 
             // dgvUsuarios
             // 
             dgvUsuarios.AllowUserToAddRows = false;
@@ -83,6 +64,8 @@
             dgvUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvUsuarios.Size = new Size(442, 150);
             dgvUsuarios.TabIndex = 4;
+            dgvUsuarios.CellContentClick += dgvUsuarios_CellContentClick;
+            dgvUsuarios.CellDoubleClick += dgvUsuarios_CellDoubleClick;
             // 
             // ID
             // 
@@ -138,14 +121,34 @@
             Rol.HeaderText = "Rol";
             Rol.Name = "Rol";
             // 
+            // btnEliminar
+            // 
+            btnEliminar.Location = new Point(48, 141);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(75, 23);
+            btnEliminar.TabIndex = 5;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
+            // 
+            // btnModificar
+            // 
+            btnModificar.Location = new Point(48, 112);
+            btnModificar.Name = "btnModificar";
+            btnModificar.Size = new Size(75, 23);
+            btnModificar.TabIndex = 6;
+            btnModificar.Text = "Modificar";
+            btnModificar.UseVisualStyleBackColor = true;
+            btnModificar.Click += btnModificar_Click;
+            // 
             // AdministradorUsuarios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(635, 260);
-            Controls.Add(dgvUsuarios);
+            Controls.Add(btnModificar);
             Controls.Add(btnEliminar);
-            Controls.Add(btnEditar);
+            Controls.Add(dgvUsuarios);
             Controls.Add(btnAgregar);
             Name = "AdministradorUsuarios";
             RightToLeftLayout = true;
@@ -157,8 +160,6 @@
         #endregion
 
         private Button btnAgregar;
-        private Button btnEditar;
-        private Button btnEliminar;
         private DataGridView dgvUsuarios;
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn NombreUsuario;
@@ -169,5 +170,7 @@
         private DataGridViewTextBoxColumn TipoDocumento;
         private DataGridViewTextBoxColumn Telefono;
         private DataGridViewTextBoxColumn Rol;
+        private Button btnEliminar;
+        private Button btnModificar;
     }
 }
